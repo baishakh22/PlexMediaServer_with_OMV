@@ -126,16 +126,31 @@ https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/e14f406d-
 https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/196ae836-28ba-4741-98ff-8674735da67d
 
 ## Install Plex Media Server
+  1. To install the HTTPs transport package, we create an SSH Connection to Pi again and type the following command:
 
-Install the https-transport package
+```
 sudo apt-get install apt-transport-https
+```
 
-Add the Plex repositories
-1. curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
 
-2. echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+  2. Add the Plex repositories by typing the following two(2) commands. Don't type run those two commands at the same time. 
 
-3. sudo apt-get update
+```
+curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+```
 
-Install Plex
+```
+echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+```
+
+  3. Update the PI again
+
+```
+sudo apt-get update
+```
+
+  4. Install Plex
+
+```
 sudo apt install plexmediaserver
+```
