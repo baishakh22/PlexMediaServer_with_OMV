@@ -85,6 +85,57 @@ Password: openmediavault
 
 ![Screenshot 2023-09-13 at 8 28 39 PM](https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/78f73e69-1dce-4a6f-888d-cb0054fe3331)
 
-  4. 
+  4. Mount a File System
 
- 
+To mount my hard drive, I click Storage > File System > +. Top left corner there is a plus sign (+), click there and select ```ext4```. Then Select the drive.
+
+![Screenshot 2023-09-13 at 9 14 09 PM](https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/ebe88ce6-4888-446f-8bfb-5f97758fb8d4)
+![Screenshot 2023-09-13 at 9 16 26 PM](https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/d42ed438-7f77-496b-9ef1-8ee37ebac065)
+
+  5. Click "Apply Change" on the top. 
+  6. Create a shared folder.
+Shared folders help organize your data in a structured and logical manner. By categorizing and segregating files into different folders, it becomes easier to find and manage specific files or types of data.
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/d73f334d-05f7-4ffe-b0ca-b34736e4ca30
+
+  7. Permission on Share Folder.
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/70dd7c9d-b69f-49e7-9f31-2aabe286a07a
+
+  8. Enable SMB services. Then share the services. 
+
+Enable SMB Services:
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/57529601-5af7-43d5-900f-539aa663faf7
+
+Share SMB:
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/32212d42-9117-43b4-a9b9-0448cc975b99
+
+  9. Do the same process for NFS services. 
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/ef725ec7-b5b2-4919-99ef-f0e6f77ef98d
+
+  10. Change the Password for openmediavault access for the admin.
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/e14f406d-7d84-419e-a8bc-075208177b74
+
+
+## Create a Network Drive on your windows. 
+
+https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/196ae836-28ba-4741-98ff-8674735da67d
+
+## Install Plex Media Server
+
+Install the https-transport package
+sudo apt-get install apt-transport-https
+
+Add the Plex repositories
+1. curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+
+2. echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+
+3. sudo apt-get update
+
+Install Plex
+sudo apt install plexmediaserver
