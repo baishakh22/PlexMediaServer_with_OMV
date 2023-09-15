@@ -150,6 +150,7 @@ sudo apt-get update
 ```
 
   4. Install Plex
+To install the plex type the following command:
 
 ```
 sudo apt install plexmediaserver
