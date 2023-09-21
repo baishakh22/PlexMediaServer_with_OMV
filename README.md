@@ -149,9 +149,14 @@ echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sour
 sudo apt-get update
 ```
 
+
   4. Install Plex
 To install the plex type the following command:
 
 ```
 sudo apt install plexmediaserver
 ```
+
+
+## Reboot or Restart the Machine
+If you need to require to reboot or restart, first log in to the OpenMediaVault and restart/reboot from there. 
