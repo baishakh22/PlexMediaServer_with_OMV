@@ -122,6 +122,11 @@ https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/e14f406d-
 
 
 ## Create a Network Drive on your windows. 
+add 
+
+```
+\\192.168.1.169\nmas\
+```
 
 https://github.com/baishakh22/PlexMediaServer_with_OMV/assets/93491482/196ae836-28ba-4741-98ff-8674735da67d
 
